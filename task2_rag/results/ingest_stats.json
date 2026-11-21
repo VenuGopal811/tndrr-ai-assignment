@@ -1,0 +1,17 @@
+{
+  "pdf": "nist_ai_rmf.pdf",
+  "pages": 48,
+  "words": 15417,
+  "embed_model": "BAAI/bge-small-en-v1.5",
+  "overlap_words": 50,
+  "chunk_sizes": {
+    "150": {
+      "chunks": 154,
+      "dim": 384
+    },
+    "400": {
+      "chunks": 44,
+      "dim": 384
+    }
+  }
+}

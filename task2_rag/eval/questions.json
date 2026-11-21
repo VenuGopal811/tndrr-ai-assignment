@@ -1,0 +1,95 @@
+{
+  "_instructions": "Venu writes all 15 questions. For each: 'question' = the question in your own words; 'gold_page' = PDF page number (1-48, as the PDF viewer shows it, NOT the printed page number); 'gold_passage' = one key sentence copied exactly from that page that answers the question (keep it under ~50 words so it fits inside one chunk with the 50-word overlap).",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How does the AI RMF define risk?",
+      "gold_page": 9,
+      "gold_passage": "risk refers to the composite measure of an event’s probability of occurring and the magnitude or degree of the consequences of the corresponding event."
+    },
+    {
+      "id": 2,
+      "question": "What are the four functions that make up the AI RMF Core?",
+      "gold_page": 25,
+      "gold_passage": "As illustrated in Figure 5, the Core is composed of four functions: GOVERN, MAP, MEASURE, and MANAGE."
+    },
+    {
+      "id": 3,
+      "question": "Does the framework tell an organisation how much risk it should be willing to accept?",
+      "gold_page": 12,
+      "gold_passage": "While the AI RMF can be used to prioritize risk, it does not prescribe risk tolerance."
+    },
+    {
+      "id": 4,
+      "question": "What should an organisation do if an AI system turns out to be dangerously risky?",
+      "gold_page": 13,
+      "gold_passage": "development and deployment should cease in a safe manner until risks can be sufficiently managed."
+    },
+    {
+      "id": 5,
+      "question": "Which characteristics does NIST list for a trustworthy AI system?",
+      "gold_page": 17,
+      "gold_passage": "Characteristics of trustworthy AI systems include: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed."
+    },
+    {
+      "id": 6,
+      "question": "Which trustworthiness property is treated as the foundation for all the others?",
+      "gold_page": 17,
+      "gold_passage": "Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics."
+    },
+    {
+      "id": 7,
+      "question": "How do transparency, explainability and interpretability differ from each other?",
+      "gold_page": 22,
+      "gold_passage": "Transparency can answer the question of “what happened” in the system. Explainability can answer the question of “how” a decision was made in the system."
+    },
+    {
+      "id": 8,
+      "question": "What are the three main types of AI bias that NIST says should be managed?",
+      "gold_page": 23,
+      "gold_passage": "NIST has identified three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive."
+    },
+    {
+      "id": 9,
+      "question": "What kinds of attacks are AI systems commonly exposed to?",
+      "gold_page": 20,
+      "gold_passage": "Common security concerns relate to adversarial examples, data poisoning, and the exfiltration of models, training data, or other intellectual property through AI system endpoints."
+    },
+    {
+      "id": 10,
+      "question": "How should an AI model's accuracy be tested so that the numbers actually mean something?",
+      "gold_page": 19,
+      "gold_passage": "Accuracy measurements should always be paired with clearly defined and realistic test sets – that are representative of conditions of expected use – and details about test methodology"
+    },
+    {
+      "id": 11,
+      "question": "Why is GOVERN described as different from the other three functions?",
+      "gold_page": 27,
+      "gold_passage": "GOVERN is a cross-cutting function that is infused throughout AI risk management and enables the other functions of the process."
+    },
+    {
+      "id": 12,
+      "question": "When is an AI system supposed to be tested?",
+      "gold_page": 33,
+      "gold_passage": "AI systems should be tested before their deployment and regularly while in operation."
+    },
+    {
+      "id": 13,
+      "question": "What does the framework expect when an organisation retires an old AI system?",
+      "gold_page": 28,
+      "gold_passage": "Processes and procedures are in place for decommissioning and phasing out AI systems safely and in a manner that does not increase risks or decrease the organization’s trustworthiness."
+    },
+    {
+      "id": 14,
+      "question": "Why can buying in outside data or models make AI risk harder to measure?",
+      "gold_page": 10,
+      "gold_passage": "Risk can emerge both from third-party data, software or hardware itself and how it is used."
+    },
+    {
+      "id": 15,
+      "question": "Who counts as a third-party entity in the AI RMF?",
+      "gold_page": 42,
+      "gold_passage": "Third-party entities include providers, developers, vendors, and evaluators of data, algorithms, models, and/or systems and related services for another organization or the organization’s customers or clients."
+    }
+  ]
+}

@@ -1,0 +1,2858 @@
+{
+  "n_questions": 15,
+  "question_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "embed_model": "BAAI/bge-small-en-v1.5",
+  "overlap_words": 50,
+  "gold_passage_not_in_pdf": [],
+  "by_size": {
+    "150": {
+      "n_chunks": 154,
+      "embedding": {
+        "recall": {
+          "recall@1": {
+            "hit": 0.6,
+            "passage": 0.467,
+            "page": 0.6
+          },
+          "recall@3": {
+            "hit": 0.8,
+            "passage": 0.733,
+            "page": 0.8
+          },
+          "recall@5": {
+            "hit": 0.8,
+            "passage": 0.733,
+            "page": 0.8
+          }
+        },
+        "per_question": [
+          {
+            "id": 1,
+            "question": "How does the AI RMF define risk?",
+            "gold_page": 9,
+            "first_hit_rank": {
+              "hit": 2,
+              "passage": 2,
+              "page": 2
+            },
+            "retrieved": [
+              {
+                "chunk": 152,
+                "pages": [
+                  47
+                ]
+              },
+              {
+                "chunk": 20,
+                "pages": [
+                  9
+                ]
+              },
+              {
+                "chunk": 19,
+                "pages": [
+                  8,
+                  9
+                ]
+              },
+              {
+                "chunk": 8,
+                "pages": [
+                  6
+                ]
+              },
+              {
+                "chunk": 0,
+                "pages": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "question": "What are the four functions that make up the AI RMF Core?",
+            "gold_page": 25,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 76,
+                "pages": [
+                  24,
+                  25
+                ]
+              },
+              {
+                "chunk": 77,
+                "pages": [
+                  25
+                ]
+              },
+              {
+                "chunk": 78,
+                "pages": [
+                  25,
+                  26
+                ]
+              },
+              {
+                "chunk": 150,
+                "pages": [
+                  46,
+                  47
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "question": "Does the framework tell an organisation how much risk it should be willing to accept?",
+            "gold_page": 12,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": null,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 32,
+                "pages": [
+                  12
+                ]
+              },
+              {
+                "chunk": 33,
+                "pages": [
+                  12
+                ]
+              },
+              {
+                "chunk": 19,
+                "pages": [
+                  8,
+                  9
+                ]
+              },
+              {
+                "chunk": 31,
+                "pages": [
+                  12
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  7,
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "question": "What should an organisation do if an AI system turns out to be dangerously risky?",
+            "gold_page": 13,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 57,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 10,
+                "pages": [
+                  6
+                ]
+              },
+              {
+                "chunk": 8,
+                "pages": [
+                  6
+                ]
+              },
+              {
+                "chunk": 142,
+                "pages": [
+                  44
+                ]
+              },
+              {
+                "chunk": 136,
+                "pages": [
+                  43
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "question": "Which characteristics does NIST list for a trustworthy AI system?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 47,
+                "pages": [
+                  17
+                ]
+              },
+              {
+                "chunk": 48,
+                "pages": [
+                  17
+                ]
+              },
+              {
+                "chunk": 0,
+                "pages": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 6,
+                "pages": [
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "question": "Which trustworthiness property is treated as the foundation for all the others?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": 2,
+              "passage": 2,
+              "page": 2
+            },
+            "retrieved": [
+              {
+                "chunk": 52,
+                "pages": [
+                  18
+                ]
+              },
+              {
+                "chunk": 48,
+                "pages": [
+                  17
+                ]
+              },
+              {
+                "chunk": 47,
+                "pages": [
+                  17
+                ]
+              },
+              {
+                "chunk": 46,
+                "pages": [
+                  15,
+                  16,
+                  17
+                ]
+              },
+              {
+                "chunk": 53,
+                "pages": [
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "question": "How do transparency, explainability and interpretability differ from each other?",
+            "gold_page": 22,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 68,
+                "pages": [
+                  22
+                ]
+              },
+              {
+                "chunk": 66,
+                "pages": [
+                  21
+                ]
+              },
+              {
+                "chunk": 67,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 65,
+                "pages": [
+                  21
+                ]
+              },
+              {
+                "chunk": 62,
+                "pages": [
+                  20
+                ]
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "question": "What are the three main types of AI bias that NIST says should be managed?",
+            "gold_page": 23,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 2,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 74,
+                "pages": [
+                  23,
+                  24
+                ]
+              },
+              {
+                "chunk": 71,
+                "pages": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "chunk": 73,
+                "pages": [
+                  23,
+                  24
+                ]
+              },
+              {
+                "chunk": 116,
+                "pages": [
+                  36,
+                  37
+                ]
+              },
+              {
+                "chunk": 72,
+                "pages": [
+                  23
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "question": "What kinds of attacks are AI systems commonly exposed to?",
+            "gold_page": 20,
+            "first_hit_rank": {
+              "hit": 2,
+              "passage": 2,
+              "page": 2
+            },
+            "retrieved": [
+              {
+                "chunk": 142,
+                "pages": [
+                  44
+                ]
+              },
+              {
+                "chunk": 60,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 10,
+                "pages": [
+                  6
+                ]
+              },
+              {
+                "chunk": 9,
+                "pages": [
+                  6
+                ]
+              },
+              {
+                "chunk": 136,
+                "pages": [
+                  43
+                ]
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "question": "How should an AI model's accuracy be tested so that the numbers actually mean something?",
+            "gold_page": 19,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 55,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 54,
+                "pages": [
+                  18,
+                  19
+                ]
+              },
+              {
+                "chunk": 57,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 56,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 104,
+                "pages": [
+                  33
+                ]
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "question": "Why is GOVERN described as different from the other three functions?",
+            "gold_page": 27,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 82,
+                "pages": [
+                  26,
+                  27
+                ]
+              },
+              {
+                "chunk": 81,
+                "pages": [
+                  26
+                ]
+              },
+              {
+                "chunk": 84,
+                "pages": [
+                  27
+                ]
+              },
+              {
+                "chunk": 80,
+                "pages": [
+                  26
+                ]
+              },
+              {
+                "chunk": 86,
+                "pages": [
+                  27,
+                  28
+                ]
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "question": "When is an AI system supposed to be tested?",
+            "gold_page": 33,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 57,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 138,
+                "pages": [
+                  43
+                ]
+              },
+              {
+                "chunk": 108,
+                "pages": [
+                  34
+                ]
+              },
+              {
+                "chunk": 139,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 127,
+                "pages": [
+                  40
+                ]
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "question": "What does the framework expect when an organisation retires an old AI system?",
+            "gold_page": 28,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 138,
+                "pages": [
+                  43
+                ]
+              },
+              {
+                "chunk": 1,
+                "pages": [
+                  3
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  7
+                ]
+              },
+              {
+                "chunk": 137,
+                "pages": [
+                  43
+                ]
+              },
+              {
+                "chunk": 142,
+                "pages": [
+                  44
+                ]
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "question": "Why can buying in outside data or models make AI risk harder to measure?",
+            "gold_page": 10,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 25,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 24,
+                "pages": [
+                  10
+                ]
+              },
+              {
+                "chunk": 139,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 136,
+                "pages": [
+                  43
+                ]
+              },
+              {
+                "chunk": 50,
+                "pages": [
+                  17,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "question": "Who counts as a third-party entity in the AI RMF?",
+            "gold_page": 42,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 133,
+                "pages": [
+                  42
+                ]
+              },
+              {
+                "chunk": 132,
+                "pages": [
+                  41,
+                  42
+                ]
+              },
+              {
+                "chunk": 13,
+                "pages": [
+                  7
+                ]
+              },
+              {
+                "chunk": 150,
+                "pages": [
+                  46,
+                  47
+                ]
+              },
+              {
+                "chunk": 121,
+                "pages": [
+                  38
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "bm25": {
+        "recall": {
+          "recall@1": {
+            "hit": 0.333,
+            "passage": 0.267,
+            "page": 0.333
+          },
+          "recall@3": {
+            "hit": 0.533,
+            "passage": 0.4,
+            "page": 0.533
+          },
+          "recall@5": {
+            "hit": 0.667,
+            "passage": 0.533,
+            "page": 0.667
+          }
+        },
+        "per_question": [
+          {
+            "id": 1,
+            "question": "How does the AI RMF define risk?",
+            "gold_page": 9,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 123,
+                "pages": [
+                  38,
+                  39,
+                  40
+                ]
+              },
+              {
+                "chunk": 24,
+                "pages": [
+                  10
+                ]
+              },
+              {
+                "chunk": 121,
+                "pages": [
+                  38
+                ]
+              },
+              {
+                "chunk": 141,
+                "pages": [
+                  44
+                ]
+              },
+              {
+                "chunk": 30,
+                "pages": [
+                  11,
+                  12
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "question": "What are the four functions that make up the AI RMF Core?",
+            "gold_page": 25,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 77,
+                "pages": [
+                  25
+                ]
+              },
+              {
+                "chunk": 76,
+                "pages": [
+                  24,
+                  25
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  8
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 68,
+                "pages": [
+                  22
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "question": "Does the framework tell an organisation how much risk it should be willing to accept?",
+            "gold_page": 12,
+            "first_hit_rank": {
+              "hit": 5,
+              "passage": 5,
+              "page": 5
+            },
+            "retrieved": [
+              {
+                "chunk": 24,
+                "pages": [
+                  10
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  7
+                ]
+              },
+              {
+                "chunk": 123,
+                "pages": [
+                  38,
+                  39,
+                  40
+                ]
+              },
+              {
+                "chunk": 152,
+                "pages": [
+                  47
+                ]
+              },
+              {
+                "chunk": 30,
+                "pages": [
+                  11,
+                  12
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "question": "What should an organisation do if an AI system turns out to be dangerously risky?",
+            "gold_page": 13,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 77,
+                "pages": [
+                  25
+                ]
+              },
+              {
+                "chunk": 33,
+                "pages": [
+                  12
+                ]
+              },
+              {
+                "chunk": 95,
+                "pages": [
+                  30
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  7
+                ]
+              },
+              {
+                "chunk": 63,
+                "pages": [
+                  20,
+                  21
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "question": "Which characteristics does NIST list for a trustworthy AI system?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 47,
+                "pages": [
+                  17
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "chunk": 5,
+                "pages": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "chunk": 6,
+                "pages": [
+                  5
+                ]
+              },
+              {
+                "chunk": 48,
+                "pages": [
+                  17
+                ]
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "question": "Which trustworthiness property is treated as the foundation for all the others?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 101,
+                "pages": [
+                  32
+                ]
+              },
+              {
+                "chunk": 79,
+                "pages": [
+                  26
+                ]
+              },
+              {
+                "chunk": 53,
+                "pages": [
+                  18
+                ]
+              },
+              {
+                "chunk": 57,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "question": "How do transparency, explainability and interpretability differ from each other?",
+            "gold_page": 22,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 2,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 67,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 68,
+                "pages": [
+                  22
+                ]
+              },
+              {
+                "chunk": 66,
+                "pages": [
+                  21
+                ]
+              },
+              {
+                "chunk": 29,
+                "pages": [
+                  11
+                ]
+              },
+              {
+                "chunk": 65,
+                "pages": [
+                  21
+                ]
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "question": "What are the three main types of AI bias that NIST says should be managed?",
+            "gold_page": 23,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 71,
+                "pages": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "chunk": 74,
+                "pages": [
+                  23,
+                  24
+                ]
+              },
+              {
+                "chunk": 73,
+                "pages": [
+                  23,
+                  24
+                ]
+              },
+              {
+                "chunk": 72,
+                "pages": [
+                  23
+                ]
+              },
+              {
+                "chunk": 66,
+                "pages": [
+                  21
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "question": "What kinds of attacks are AI systems commonly exposed to?",
+            "gold_page": 20,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": null,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 139,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 142,
+                "pages": [
+                  44
+                ]
+              },
+              {
+                "chunk": 61,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 68,
+                "pages": [
+                  22
+                ]
+              },
+              {
+                "chunk": 9,
+                "pages": [
+                  6
+                ]
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "question": "How should an AI model's accuracy be tested so that the numbers actually mean something?",
+            "gold_page": 19,
+            "first_hit_rank": {
+              "hit": 4,
+              "passage": 4,
+              "page": 4
+            },
+            "retrieved": [
+              {
+                "chunk": 63,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 62,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 35,
+                "pages": [
+                  13
+                ]
+              },
+              {
+                "chunk": 55,
+                "pages": [
+                  19
+                ]
+              },
+              {
+                "chunk": 50,
+                "pages": [
+                  17,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "question": "Why is GOVERN described as different from the other three functions?",
+            "gold_page": 27,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": null,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 7,
+                "pages": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "chunk": 77,
+                "pages": [
+                  25
+                ]
+              },
+              {
+                "chunk": 84,
+                "pages": [
+                  27
+                ]
+              },
+              {
+                "chunk": 83,
+                "pages": [
+                  27
+                ]
+              },
+              {
+                "chunk": 116,
+                "pages": [
+                  36,
+                  37
+                ]
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "question": "When is an AI system supposed to be tested?",
+            "gold_page": 33,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": 3,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 63,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 109,
+                "pages": [
+                  34,
+                  35
+                ]
+              },
+              {
+                "chunk": 103,
+                "pages": [
+                  32,
+                  33
+                ]
+              },
+              {
+                "chunk": 64,
+                "pages": [
+                  21
+                ]
+              },
+              {
+                "chunk": 150,
+                "pages": [
+                  46,
+                  47
+                ]
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "question": "What does the framework expect when an organisation retires an old AI system?",
+            "gold_page": 28,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 14,
+                "pages": [
+                  7
+                ]
+              },
+              {
+                "chunk": 68,
+                "pages": [
+                  22
+                ]
+              },
+              {
+                "chunk": 109,
+                "pages": [
+                  34,
+                  35
+                ]
+              },
+              {
+                "chunk": 24,
+                "pages": [
+                  10
+                ]
+              },
+              {
+                "chunk": 124,
+                "pages": [
+                  39,
+                  40
+                ]
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "question": "Why can buying in outside data or models make AI risk harder to measure?",
+            "gold_page": 10,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 67,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 144,
+                "pages": [
+                  45
+                ]
+              },
+              {
+                "chunk": 143,
+                "pages": [
+                  44,
+                  45
+                ]
+              },
+              {
+                "chunk": 68,
+                "pages": [
+                  22
+                ]
+              },
+              {
+                "chunk": 123,
+                "pages": [
+                  38,
+                  39,
+                  40
+                ]
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "question": "Who counts as a third-party entity in the AI RMF?",
+            "gold_page": 42,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 133,
+                "pages": [
+                  42
+                ]
+              },
+              {
+                "chunk": 101,
+                "pages": [
+                  32
+                ]
+              },
+              {
+                "chunk": 132,
+                "pages": [
+                  41,
+                  42
+                ]
+              },
+              {
+                "chunk": 90,
+                "pages": [
+                  29
+                ]
+              },
+              {
+                "chunk": 91,
+                "pages": [
+                  29
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "400": {
+      "n_chunks": 44,
+      "embedding": {
+        "recall": {
+          "recall@1": {
+            "hit": 0.733,
+            "passage": 0.6,
+            "page": 0.733
+          },
+          "recall@3": {
+            "hit": 0.8,
+            "passage": 0.733,
+            "page": 0.8
+          },
+          "recall@5": {
+            "hit": 0.867,
+            "passage": 0.8,
+            "page": 0.867
+          }
+        },
+        "per_question": [
+          {
+            "id": 1,
+            "question": "How does the AI RMF define risk?",
+            "gold_page": 9,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": 3,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 43,
+                "pages": [
+                  47,
+                  48
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 5,
+                "pages": [
+                  8,
+                  9
+                ]
+              },
+              {
+                "chunk": 11,
+                "pages": [
+                  13,
+                  14
+                ]
+              },
+              {
+                "chunk": 0,
+                "pages": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "question": "What are the four functions that make up the AI RMF Core?",
+            "gold_page": 25,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 22,
+                "pages": [
+                  25,
+                  26
+                ]
+              },
+              {
+                "chunk": 43,
+                "pages": [
+                  47,
+                  48
+                ]
+              },
+              {
+                "chunk": 42,
+                "pages": [
+                  45,
+                  46,
+                  47
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "question": "Does the framework tell an organisation how much risk it should be willing to accept?",
+            "gold_page": 12,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": null,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 9,
+                "pages": [
+                  12,
+                  13
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 43,
+                "pages": [
+                  47,
+                  48
+                ]
+              },
+              {
+                "chunk": 11,
+                "pages": [
+                  13,
+                  14
+                ]
+              },
+              {
+                "chunk": 33,
+                "pages": [
+                  36,
+                  37
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "question": "What should an organisation do if an AI system turns out to be dangerously risky?",
+            "gold_page": 13,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 10,
+                "pages": [
+                  13
+                ]
+              },
+              {
+                "chunk": 11,
+                "pages": [
+                  13,
+                  14
+                ]
+              },
+              {
+                "chunk": 3,
+                "pages": [
+                  6,
+                  7
+                ]
+              },
+              {
+                "chunk": 2,
+                "pages": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "question": "Which characteristics does NIST list for a trustworthy AI system?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 13,
+                "pages": [
+                  15,
+                  16,
+                  17
+                ]
+              },
+              {
+                "chunk": 15,
+                "pages": [
+                  18,
+                  19
+                ]
+              },
+              {
+                "chunk": 1,
+                "pages": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  17,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "question": "Which trustworthiness property is treated as the foundation for all the others?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 13,
+                "pages": [
+                  15,
+                  16,
+                  17
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  17,
+                  18
+                ]
+              },
+              {
+                "chunk": 2,
+                "pages": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 15,
+                "pages": [
+                  18,
+                  19
+                ]
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "question": "How do transparency, explainability and interpretability differ from each other?",
+            "gold_page": 22,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  17,
+                  18
+                ]
+              },
+              {
+                "chunk": 15,
+                "pages": [
+                  18,
+                  19
+                ]
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "question": "What are the three main types of AI bias that NIST says should be managed?",
+            "gold_page": 23,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 2,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              },
+              {
+                "chunk": 20,
+                "pages": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "chunk": 40,
+                "pages": [
+                  44,
+                  45
+                ]
+              },
+              {
+                "chunk": 41,
+                "pages": [
+                  44,
+                  45,
+                  46
+                ]
+              },
+              {
+                "chunk": 0,
+                "pages": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "question": "What kinds of attacks are AI systems commonly exposed to?",
+            "gold_page": 20,
+            "first_hit_rank": {
+              "hit": 4,
+              "passage": 4,
+              "page": 4
+            },
+            "retrieved": [
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 2,
+                "pages": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "chunk": 38,
+                "pages": [
+                  42,
+                  43
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "question": "How should an AI model's accuracy be tested so that the numbers actually mean something?",
+            "gold_page": 19,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 15,
+                "pages": [
+                  18,
+                  19
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  19,
+                  20
+                ]
+              },
+              {
+                "chunk": 31,
+                "pages": [
+                  34,
+                  35
+                ]
+              },
+              {
+                "chunk": 7,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "question": "Why is GOVERN described as different from the other three functions?",
+            "gold_page": 27,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 23,
+                "pages": [
+                  26,
+                  27
+                ]
+              },
+              {
+                "chunk": 24,
+                "pages": [
+                  27,
+                  28
+                ]
+              },
+              {
+                "chunk": 25,
+                "pages": [
+                  28,
+                  29
+                ]
+              },
+              {
+                "chunk": 22,
+                "pages": [
+                  25,
+                  26
+                ]
+              },
+              {
+                "chunk": 2,
+                "pages": [
+                  5,
+                  6
+                ]
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "question": "When is an AI system supposed to be tested?",
+            "gold_page": 33,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 31,
+                "pages": [
+                  34,
+                  35
+                ]
+              },
+              {
+                "chunk": 15,
+                "pages": [
+                  18,
+                  19
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  19,
+                  20
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "question": "What does the framework expect when an organisation retires an old AI system?",
+            "gold_page": 28,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 11,
+                "pages": [
+                  13,
+                  14
+                ]
+              },
+              {
+                "chunk": 43,
+                "pages": [
+                  47,
+                  48
+                ]
+              },
+              {
+                "chunk": 10,
+                "pages": [
+                  13
+                ]
+              },
+              {
+                "chunk": 0,
+                "pages": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "question": "Why can buying in outside data or models make AI risk harder to measure?",
+            "gold_page": 10,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 7,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 2,
+                "pages": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "chunk": 32,
+                "pages": [
+                  35,
+                  36
+                ]
+              },
+              {
+                "chunk": 41,
+                "pages": [
+                  44,
+                  45,
+                  46
+                ]
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "question": "Who counts as a third-party entity in the AI RMF?",
+            "gold_page": 42,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 38,
+                "pages": [
+                  42,
+                  43
+                ]
+              },
+              {
+                "chunk": 34,
+                "pages": [
+                  37,
+                  38
+                ]
+              },
+              {
+                "chunk": 43,
+                "pages": [
+                  47,
+                  48
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "bm25": {
+        "recall": {
+          "recall@1": {
+            "hit": 0.267,
+            "passage": 0.2,
+            "page": 0.267
+          },
+          "recall@3": {
+            "hit": 0.533,
+            "passage": 0.467,
+            "page": 0.533
+          },
+          "recall@5": {
+            "hit": 0.667,
+            "passage": 0.6,
+            "page": 0.667
+          }
+        },
+        "per_question": [
+          {
+            "id": 1,
+            "question": "How does the AI RMF define risk?",
+            "gold_page": 9,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 40,
+                "pages": [
+                  44,
+                  45
+                ]
+              },
+              {
+                "chunk": 42,
+                "pages": [
+                  45,
+                  46,
+                  47
+                ]
+              },
+              {
+                "chunk": 9,
+                "pages": [
+                  12,
+                  13
+                ]
+              },
+              {
+                "chunk": 41,
+                "pages": [
+                  44,
+                  45,
+                  46
+                ]
+              },
+              {
+                "chunk": 35,
+                "pages": [
+                  38,
+                  39,
+                  40
+                ]
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "question": "What are the four functions that make up the AI RMF Core?",
+            "gold_page": 25,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              },
+              {
+                "chunk": 22,
+                "pages": [
+                  25,
+                  26
+                ]
+              },
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 3,
+                "pages": [
+                  6,
+                  7
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "question": "Does the framework tell an organisation how much risk it should be willing to accept?",
+            "gold_page": 12,
+            "first_hit_rank": {
+              "hit": 5,
+              "passage": 5,
+              "page": 5
+            },
+            "retrieved": [
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 7,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 6,
+                "pages": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "chunk": 43,
+                "pages": [
+                  47,
+                  48
+                ]
+              },
+              {
+                "chunk": 8,
+                "pages": [
+                  11,
+                  12
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "question": "What should an organisation do if an AI system turns out to be dangerously risky?",
+            "gold_page": 13,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": null,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 9,
+                "pages": [
+                  12,
+                  13
+                ]
+              },
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 26,
+                "pages": [
+                  29,
+                  30
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 22,
+                "pages": [
+                  25,
+                  26
+                ]
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "question": "Which characteristics does NIST list for a trustworthy AI system?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 1,
+                "pages": [
+                  4,
+                  5
+                ]
+              },
+              {
+                "chunk": 40,
+                "pages": [
+                  44,
+                  45
+                ]
+              },
+              {
+                "chunk": 8,
+                "pages": [
+                  11,
+                  12
+                ]
+              },
+              {
+                "chunk": 35,
+                "pages": [
+                  38,
+                  39,
+                  40
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  19,
+                  20
+                ]
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "question": "Which trustworthiness property is treated as the foundation for all the others?",
+            "gold_page": 17,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 26,
+                "pages": [
+                  29,
+                  30
+                ]
+              },
+              {
+                "chunk": 16,
+                "pages": [
+                  19,
+                  20
+                ]
+              },
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  20
+                ]
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "question": "How do transparency, explainability and interpretability differ from each other?",
+            "gold_page": 22,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 8,
+                "pages": [
+                  11,
+                  12
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  17,
+                  18
+                ]
+              },
+              {
+                "chunk": 38,
+                "pages": [
+                  42,
+                  43
+                ]
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "question": "What are the three main types of AI bias that NIST says should be managed?",
+            "gold_page": 23,
+            "first_hit_rank": {
+              "hit": 1,
+              "passage": 1,
+              "page": 1
+            },
+            "retrieved": [
+              {
+                "chunk": 20,
+                "pages": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              },
+              {
+                "chunk": 40,
+                "pages": [
+                  44,
+                  45
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "question": "What kinds of attacks are AI systems commonly exposed to?",
+            "gold_page": 20,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": 3,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 40,
+                "pages": [
+                  44,
+                  45
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 6,
+                "pages": [
+                  9,
+                  10
+                ]
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "question": "How should an AI model's accuracy be tested so that the numbers actually mean something?",
+            "gold_page": 19,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": 3,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 10,
+                "pages": [
+                  13
+                ]
+              },
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 15,
+                "pages": [
+                  18,
+                  19
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  20
+                ]
+              },
+              {
+                "chunk": 14,
+                "pages": [
+                  17,
+                  18
+                ]
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "question": "Why is GOVERN described as different from the other three functions?",
+            "gold_page": 27,
+            "first_hit_rank": {
+              "hit": 4,
+              "passage": 4,
+              "page": 4
+            },
+            "retrieved": [
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 22,
+                "pages": [
+                  25,
+                  26
+                ]
+              },
+              {
+                "chunk": 2,
+                "pages": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "chunk": 23,
+                "pages": [
+                  26,
+                  27
+                ]
+              },
+              {
+                "chunk": 21,
+                "pages": [
+                  23,
+                  24,
+                  25
+                ]
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "question": "When is an AI system supposed to be tested?",
+            "gold_page": 33,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": 3,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 9,
+                "pages": [
+                  12,
+                  13
+                ]
+              },
+              {
+                "chunk": 29,
+                "pages": [
+                  32,
+                  33
+                ]
+              },
+              {
+                "chunk": 7,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 17,
+                "pages": [
+                  20
+                ]
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "question": "What does the framework expect when an organisation retires an old AI system?",
+            "gold_page": 28,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 4,
+                "pages": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "chunk": 39,
+                "pages": [
+                  43,
+                  44
+                ]
+              },
+              {
+                "chunk": 7,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 6,
+                "pages": [
+                  9,
+                  10
+                ]
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "question": "Why can buying in outside data or models make AI risk harder to measure?",
+            "gold_page": 10,
+            "first_hit_rank": {
+              "hit": null,
+              "passage": null,
+              "page": null
+            },
+            "retrieved": [
+              {
+                "chunk": 19,
+                "pages": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "chunk": 41,
+                "pages": [
+                  44,
+                  45,
+                  46
+                ]
+              },
+              {
+                "chunk": 20,
+                "pages": [
+                  22,
+                  23
+                ]
+              },
+              {
+                "chunk": 35,
+                "pages": [
+                  38,
+                  39,
+                  40
+                ]
+              },
+              {
+                "chunk": 22,
+                "pages": [
+                  25,
+                  26
+                ]
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "question": "Who counts as a third-party entity in the AI RMF?",
+            "gold_page": 42,
+            "first_hit_rank": {
+              "hit": 3,
+              "passage": 3,
+              "page": 3
+            },
+            "retrieved": [
+              {
+                "chunk": 18,
+                "pages": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "chunk": 7,
+                "pages": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "chunk": 37,
+                "pages": [
+                  41,
+                  42
+                ]
+              },
+              {
+                "chunk": 34,
+                "pages": [
+                  37,
+                  38
+                ]
+              },
+              {
+                "chunk": 26,
+                "pages": [
+                  29,
+                  30
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "ollama_version": "0.40.17",
+  "machine": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "python": "3.12.6"
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_predict": 256,
+    "num_ctx": 2048
+  },
+  "n_prompts": 10,
+  "results": [
+    {
+      "model": "qwen2.5:1.5b-instruct-q8_0",
+      "summary": {
+        "gen_tokens_per_sec_pooled": 53.69,
+        "gen_tokens_per_sec_mean": 53.3,
+        "gen_tokens_per_sec_median": 55.11,
+        "prompt_tokens_per_sec_pooled": 1228.83,
+        "total_generated_tokens": 1388,
+        "memory_size_bytes": 1769094511,
+        "memory_size_vram_bytes": 1769094511,
+        "memory_size_gb": 1.648
+      },
+      "runs": [
+        {
+          "id": "factual",
+          "response": "The capital of Australia is Canberra, and it was chosen over Sydney and Melbourne for several reasons. Canberra was chosen to be the capital because it was located in the heart of the Australian continent, away from the coast, which made it easier to defend against potential threats. Additionally, Canberra was chosen to be a neutral location, as it was not a major city and did not have a strong political or economic influence. Finally, Canberra was chosen to be a planned city, which allowed for efficient and organized government and infrastructure development.",
+          "eval_count": 105,
+          "eval_duration_ns": 1925536000,
+          "prompt_eval_count": 52,
+          "prompt_eval_duration_ns": 61207000,
+          "total_duration_ns": 1999041500,
+          "gen_tokens_per_sec": 54.53,
+          "prompt_tokens_per_sec": 849.58
+        },
+        {
+          "id": "reasoning",
+          "response": "To determine the arrival time of the train, we need to follow these steps:\n\n1. **Calculate the departure time plus the journey time:**\n   - The train leaves at 9:40 AM.\n   - The journey takes 2 hours 35 minutes.\n   - Adding 2 hours 35 minutes to 9:40 AM:\n     - 9:40 AM + 2 hours = 11:40 AM\n     - 11:40 AM + 35 minutes = 12:15 PM\n\n2. **Account for the delay:**\n   - The train is delayed by 25 minutes.\n   - Adding 25 minutes to 12:15 PM:\n     - 12:15 PM + 25 minutes = 12:40 PM\n\nTherefore, the train arrives at 12:40 PM.",
+          "eval_count": 192,
+          "eval_duration_ns": 4198907000,
+          "prompt_eval_count": 75,
+          "prompt_eval_duration_ns": 63632000,
+          "total_duration_ns": 4278291400,
+          "gen_tokens_per_sec": 45.73,
+          "prompt_tokens_per_sec": 1178.65
+        },
+        {
+          "id": "logic",
+          "response": "Yes, we can conclude that some bloops are lazzies.\n\nExplanation:\nThe given statements are:\n1. All bloops are razzies.\n2. Some razzies are lazzies.\n\nFrom statement 1, we know that every blop is also a razzie. This means that if we have a blop, it must also be a razzie.\n\nFrom statement 2, we know that there is at least one razzie that is also a lazzie. This means that there is at least one razzie that is a subset of the lazzies.\n\nSince all blops are razzies, and some razzies are lazzies, it follows that some blops must be lazzies. This is because if a razzie is a lazzie, and all blops are razzies, then some blops must be lazzies.\n\nTherefore, we can conclude that some bloops are lazzies.",
+          "eval_count": 203,
+          "eval_duration_ns": 3618888000,
+          "prompt_eval_count": 66,
+          "prompt_eval_duration_ns": 56428000,
+          "total_duration_ns": 3690341100,
+          "gen_tokens_per_sec": 56.09,
+          "prompt_tokens_per_sec": 1169.63
+        },
+        {
+          "id": "code",
+          "response": "Certainly! Below is a Python function `is_palindrome(s)` that checks if a given string `s` is a palindrome, ignoring case, spaces, and punctuation. It uses regular expressions to clean the input string and then checks if the cleaned string is equal to its reverse.\n\n```python\nimport re\n\ndef is_palindrome(s):\n    # Remove all non-alphanumeric characters and convert to lowercase\n    cleaned = re.sub(r'[^A-Za-z0-9]', '', s).lower()\n    \n    # Check if the cleaned string is equal to its reverse\n    return cleaned == cleaned[::-1]\n\n# Example calls\nprint(is_palindrome(\"A man, a plan, a canal, Panama\"))  # True\nprint(is_palindrome(\"No lemon, no melon\"))              # True\nprint(is_palindrome(\"Hello, World!\"))                   # False\n```\n\n### Explanation:\n1. **Cleaning the String**:\n   - `re.sub(r'[^A-Za-z0-9]', '', s)` removes all non-alphanumeric characters from the string `s`.\n   - `.lower()` converts the string to lowercase to ignore case sensitivity.\n\n2. **Checking for Palindrome**:\n   - The cleaned string is compared to its reverse (`clean",
+          "eval_count": 256,
+          "eval_duration_ns": 4546225000,
+          "prompt_eval_count": 51,
+          "prompt_eval_duration_ns": 30532000,
+          "total_duration_ns": 4590269300,
+          "gen_tokens_per_sec": 56.31,
+          "prompt_tokens_per_sec": 1670.38
+        },
+        {
+          "id": "code_debug",
+          "response": "The bug in the provided Python code is that it subtracts 1 from the average value before returning it. This is incorrect because the average should be returned as a floating-point number, not an integer. Here is the corrected version of the code:\n\n```python\ndef average(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total / len(nums)\n```\n\nThis code correctly calculates the average of the numbers in the list `nums` and returns it as a floating-point number.",
+          "eval_count": 108,
+          "eval_duration_ns": 1928561000,
+          "prompt_eval_count": 70,
+          "prompt_eval_duration_ns": 47901000,
+          "total_duration_ns": 1991777800,
+          "gen_tokens_per_sec": 56.0,
+          "prompt_tokens_per_sec": 1461.35
+        },
+        {
+          "id": "summarisation",
+          "response": "Large language models are trained to predict the next token in text, but they can still produce incorrect statements, so outputs should be checked for important tasks.",
+          "eval_count": 31,
+          "eval_duration_ns": 590425000,
+          "prompt_eval_count": 98,
+          "prompt_eval_duration_ns": 53522000,
+          "total_duration_ns": 656325100,
+          "gen_tokens_per_sec": 52.5,
+          "prompt_tokens_per_sec": 1831.02
+        },
+        {
+          "id": "hindi_translation",
+          "response": "आपको फ्रांसीसी में लिखें: \"विशेष रिपोर्ट फ्रांसीसी शाम को भेजें। आपकी मदद के लिए धन्यवाद।\"",
+          "eval_count": 84,
+          "eval_duration_ns": 1504485000,
+          "prompt_eval_count": 55,
+          "prompt_eval_duration_ns": 38565000,
+          "total_duration_ns": 1554953400,
+          "gen_tokens_per_sec": 55.83,
+          "prompt_tokens_per_sec": 1426.16
+        },
+        {
+          "id": "json_output",
+          "response": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 27,\n  \"city\": \"Pune\"\n}\n```",
+          "eval_count": 31,
+          "eval_duration_ns": 663464000,
+          "prompt_eval_count": 63,
+          "prompt_eval_duration_ns": 63140000,
+          "total_duration_ns": 743461700,
+          "gen_tokens_per_sec": 46.72,
+          "prompt_tokens_per_sec": 997.78
+        },
+        {
+          "id": "maths",
+          "response": "To find 17% of 2,450, you can follow these steps:\n\n1. Convert the percentage to a decimal. 17% is the same as 17/100, which is 0.17.\n2. Multiply the decimal by the number: 0.17 × 2,450.\n\nLet's do the multiplication:\n\n0.17 × 2,450 = 416.5\n\nSo, 17% of 2,450 is 416.5.",
+          "eval_count": 122,
+          "eval_duration_ns": 2277181000,
+          "prompt_eval_count": 52,
+          "prompt_eval_duration_ns": 54469000,
+          "total_duration_ns": 2344343000,
+          "gen_tokens_per_sec": 53.58,
+          "prompt_tokens_per_sec": 954.67
+        },
+        {
+          "id": "maths_word",
+          "response": "To find the final price of the shirt after applying the discount and adding the GST, we need to follow these steps:\n\n1. Calculate the discounted price of the shirt.\n2. Calculate the price after adding the GST to the discounted price.\n\nLet's start with the first step:\n\n1. **Calculate the discounted price:**\n   The original price of the shirt is Rs 1,250. The shop gives a 20% discount on this price.\n   \\[\n   \\text{Discount} = 20\\% \\text{ of } 1250 = \\frac{20}{100} \\times 1250 = 250\n   \\]\n   So, the discounted price is:\n   \\[\n   \\text{Discounted Price} = 1250 - 250 = 1000\n   \\]\n\n2. **Calculate the price after adding the GST:**\n   The GST is 5% of the discounted price.\n   \\[\n   \\text{GST} = 5\\% \\text{ of } 1000 = \\frac{5}{100} \\times 1000 = 50\n",
+          "eval_count": 256,
+          "eval_duration_ns": 4598070000,
+          "prompt_eval_count": 72,
+          "prompt_eval_duration_ns": 62817000,
+          "total_duration_ns": 4674817200,
+          "gen_tokens_per_sec": 55.68,
+          "prompt_tokens_per_sec": 1146.19
+        }
+      ]
+    },
+    {
+      "model": "qwen2.5:1.5b-instruct-q4_K_M",
+      "summary": {
+        "gen_tokens_per_sec_pooled": 82.0,
+        "gen_tokens_per_sec_mean": 80.05,
+        "gen_tokens_per_sec_median": 81.08,
+        "prompt_tokens_per_sec_pooled": 1075.27,
+        "total_generated_tokens": 1412,
+        "memory_size_bytes": 1108565032,
+        "memory_size_vram_bytes": 1108565032,
+        "memory_size_gb": 1.032
+      },
+      "runs": [
+        {
+          "id": "factual",
+          "response": "The capital of Australia is Canberra, located in the Australian Capital Territory. Canberra was chosen as the capital city in 1908 to serve as a neutral center for the nation's government, reflecting the country's desire for a centralized government structure. This decision was made to avoid the political tensions that had arisen in Sydney and Melbourne, which were already established as major cities. Canberra's strategic location in the center of the country facilitated efficient communication and transportation, making it an ideal choice for the capital.",
+          "eval_count": 101,
+          "eval_duration_ns": 1213819000,
+          "prompt_eval_count": 52,
+          "prompt_eval_duration_ns": 23957000,
+          "total_duration_ns": 1245737600,
+          "gen_tokens_per_sec": 83.21,
+          "prompt_tokens_per_sec": 2170.56
+        },
+        {
+          "id": "reasoning",
+          "response": "To determine the arrival time of the train, we need to follow these steps:\n\n1. **Calculate the total travel time including the delay:**\n   - The journey takes 2 hours and 35 minutes.\n   - The train is delayed by 25 minutes.\n   - Therefore, the total travel time is \\(2 \\text{ hours } 35 \\text{ minutes} + 25 \\text{ minutes} = 2 \\text{ hours } 60 \\text{ minutes} = 3 \\text{ hours} \\).\n\n2. **Determine the departure time:**\n   - The train leaves at 9:40 AM.\n\n3. **Add the total travel time to the departure time:**\n   - Start with 9:40 AM and add 3 hours.\n   - Adding 3 hours to 9:40 AM:\n     - 9:40 AM + 1 hour = 10:40 AM\n     - 10:40 AM + 1 hour = 11:40 AM\n     - 11:40 AM + 1 hour = 12:40 PM\n     - 12:40 PM +",
+          "eval_count": 256,
+          "eval_duration_ns": 3075126000,
+          "prompt_eval_count": 75,
+          "prompt_eval_duration_ns": 64489000,
+          "total_duration_ns": 3151987200,
+          "gen_tokens_per_sec": 83.25,
+          "prompt_tokens_per_sec": 1162.99
+        },
+        {
+          "id": "logic",
+          "response": "Yes, we can conclude that some bloops are lazzies.\n\nExplanation:\nThe given statements are:\n1. All bloops are razzies.\n2. Some razzies are lazzies.\n\nFrom these statements, we can infer the following:\n- Since all bloops are razzies, any bloops we have are also razzies.\n- Since some razzies are lazzies, there is at least one razzie that is also a lazzie.\n\nCombining these two pieces of information, we can conclude that there is at least one bloop that is also a lazzie. Therefore, we can say that some bloops are lazzies.",
+          "eval_count": 142,
+          "eval_duration_ns": 1736145000,
+          "prompt_eval_count": 66,
+          "prompt_eval_duration_ns": 53200000,
+          "total_duration_ns": 1801144700,
+          "gen_tokens_per_sec": 81.79,
+          "prompt_tokens_per_sec": 1240.6
+        },
+        {
+          "id": "code",
+          "response": "Certainly! Below is a Python function `is_palindrome(s)` that checks if a string is a palindrome, ignoring case, spaces, and punctuation. It uses the `re` module to remove non-alphanumeric characters and the `str.lower()` method to ignore case.\n\n```python\nimport re\n\ndef is_palindrome(s):\n    # Remove non-alphanumeric characters and convert to lowercase\n    cleaned = re.sub(r'[^a-zA-Z0-9]', '', s).lower()\n    \n    # Check if the cleaned string is equal to its reverse\n    return cleaned == cleaned[::-1]\n\n# Example calls\nprint(is_palindrome(\"A man, a plan, a canal: Panama\"))  # True\nprint(is_palindrome(\"No lemon, no melon\"))  # True\nprint(is_palindrome(\"Hello, World!\"))  # False\n```\n\n### Explanation:\n- `re.sub(r'[^a-zA-Z0-9]', '', s)`: This line removes all characters in the string `s` that are not letters or numbers.\n- `lower()`: Converts the cleaned string to lowercase to ignore case.\n- `== cleaned[::-1]`: This checks if the cleaned string is equal to its reverse, which is the definition of a",
+          "eval_count": 256,
+          "eval_duration_ns": 3085713000,
+          "prompt_eval_count": 51,
+          "prompt_eval_duration_ns": 56888000,
+          "total_duration_ns": 3156481700,
+          "gen_tokens_per_sec": 82.96,
+          "prompt_tokens_per_sec": 896.5
+        },
+        {
+          "id": "code_debug",
+          "response": "The bug in the provided Python code is that it subtracts 1 from the average of the numbers in the list. This is incorrect because the average should be calculated by summing all the numbers and then dividing by the length of the list, not by subtracting 1.\n\nHere is the corrected version of the function:\n\n```python\ndef average(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total / len(nums)\n```\n\nThis function correctly calculates the average of the numbers in the list by summing all the numbers and then dividing by the length of the list.",
+          "eval_count": 127,
+          "eval_duration_ns": 1580130000,
+          "prompt_eval_count": 70,
+          "prompt_eval_duration_ns": 72666000,
+          "total_duration_ns": 1664978000,
+          "gen_tokens_per_sec": 80.37,
+          "prompt_tokens_per_sec": 963.31
+        },
+        {
+          "id": "summarisation",
+          "response": "Large language models are trained to predict the next token in text, but they can still produce incorrect statements due to their limitations.",
+          "eval_count": 26,
+          "eval_duration_ns": 356293000,
+          "prompt_eval_count": 98,
+          "prompt_eval_duration_ns": 95996000,
+          "total_duration_ns": 465147600,
+          "gen_tokens_per_sec": 72.97,
+          "prompt_tokens_per_sec": 1020.88
+        },
+        {
+          "id": "hindi_translation",
+          "response": "आपको फ्रांसीसी अक्षरों में लिखना चाहिए: \"वह दिन को अक्टूबर को तैयार करें। धन्यवाद के साथ आपकी मदद करने की धन्यवाद।\"",
+          "eval_count": 107,
+          "eval_duration_ns": 1346049000,
+          "prompt_eval_count": 55,
+          "prompt_eval_duration_ns": 47747000,
+          "total_duration_ns": 1408847300,
+          "gen_tokens_per_sec": 79.49,
+          "prompt_tokens_per_sec": 1151.9
+        },
+        {
+          "id": "json_output",
+          "response": "```json\n{\n  \"name\": \"Priya\",\n  \"age\": 27,\n  \"city\": \"Pune\"\n}\n```",
+          "eval_count": 31,
+          "eval_duration_ns": 433756000,
+          "prompt_eval_count": 63,
+          "prompt_eval_duration_ns": 67198000,
+          "total_duration_ns": 514099500,
+          "gen_tokens_per_sec": 71.47,
+          "prompt_tokens_per_sec": 937.53
+        },
+        {
+          "id": "maths",
+          "response": "To find 17% of 2,450, you can follow these steps:\n\n1. Convert the percentage to a decimal. 17% is the same as 0.17.\n2. Multiply 2,450 by 0.17.\n\nLet's do the calculation:\n\n\\[ 2,450 \\times 0.17 = 416.5 \\]\n\nSo, 17% of 2,450 is 416.5.",
+          "eval_count": 110,
+          "eval_duration_ns": 1371033000,
+          "prompt_eval_count": 52,
+          "prompt_eval_duration_ns": 54862000,
+          "total_duration_ns": 1436878700,
+          "gen_tokens_per_sec": 80.23,
+          "prompt_tokens_per_sec": 947.83
+        },
+        {
+          "id": "maths_word",
+          "response": "To find the final price of the shirt after the discount and GST, we'll follow these steps:\n\n1. Calculate the discounted price.\n2. Calculate the GST on the discounted price.\n3. Add the GST to the discounted price to get the final price.\n\nLet's start with the first step:\n\n1. **Calculate the discounted price:**\n   The original price of the shirt is Rs 1,250. The shop gives a 20% discount.\n   \\[\n   \\text{Discount} = 20\\% \\text{ of } 1250 = 0.20 \\times 1250 = 250\n   \\]\n   So, the discounted price is:\n   \\[\n   \\text{Discounted Price} = 1250 - 250 = 1000\n   \\]\n\n2. **Calculate the GST on the discounted price:**\n   The GST rate is 5%. So, the GST on the discounted price is:\n   \\[\n   \\text{GST} = 5\\% \\text{ of } 1000 = 0.05 \\times 1000 = 50\n   \\",
+          "eval_count": 256,
+          "eval_duration_ns": 3021798000,
+          "prompt_eval_count": 72,
+          "prompt_eval_duration_ns": 71217000,
+          "total_duration_ns": 3106941100,
+          "gen_tokens_per_sec": 84.72,
+          "prompt_tokens_per_sec": 1010.99
+        }
+      ]
+    }
+  ]
+}

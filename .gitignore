@@ -1,0 +1,42 @@
+# Secrets (rules.md #7)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Model weights and LoRA adapters (live on Google Drive / HF cache, not in git)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+adapter/
+adapters/
+**/adapter*/
+checkpoints/
+**/checkpoint-*/
+outputs/
+
+# FAISS indexes and cached embeddings (rebuilt by ingest.py)
+*.faiss
+*.index
+*.npy
+task2_rag/index/
+
+# Private planning docs (kept locally, not published)
+docs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# report build intermediate
+report/report.html
