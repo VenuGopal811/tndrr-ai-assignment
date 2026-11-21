@@ -167,6 +167,8 @@ def make_pdf(text):
     # Drop the AUTO markers and the editing note from the rendered PDF.
     body = re.sub(r"<!-- /?AUTO:\w+ -->\n?", "", text)
     body = re.sub(r"^Everything between .*?\n", "", body, flags=re.M)
+    # Python-Markdown only starts a list after a blank line; add one so "text\n- item" renders as a list.
+    body = re.sub(r"^((?![-*] |\d+\. |>|\|)\S.*)\n(?=[-*] |\d+\. )", r"\1\n\n", body, flags=re.M)
     html = markdown.markdown(body, extensions=["tables"])
     html_path = ROOT / "report" / "report.html"
     html_path.write_text(f"<!doctype html><meta charset='utf-8'><style>{CSS}</style>{html}", encoding="utf-8")

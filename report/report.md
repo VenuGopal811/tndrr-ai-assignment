@@ -1,6 +1,6 @@
 # tndrr AI Internship Assignment: Venu Gopal
 
-Repo: TODO(Venu: public GitHub URL)
+Repo: https://github.com/VenuGopal811/tndrr-ai-assignment
 
 Everything between `<!-- AUTO:... -->` markers is filled by `report/build_report.py` from the results files.
 
@@ -18,11 +18,27 @@ Qwen2.5-0.5B-Instruct, 4-bit NF4 QLoRA. Task: turn a short personal note into `{
 <!-- /AUTO:t1_data -->
 
 <!-- AUTO:t1_metrics -->
-_not run: `task1_lora/results/metrics.json` does not exist yet._
+Test set n=60, greedy decoding. All values are % of examples.
+
+| Metric (%) | Base | Fine-tuned |
+|---|---|---|
+| Valid JSON (strict) | 58.3 | 100.0 |
+| Valid JSON (lenient) | 58.3 | 100.0 |
+| Exact match | 0.0 | 86.7 |
+| Field: type | 25.0 | 100.0 |
+| Field: amount | 51.7 | 100.0 |
+| Field: currency | 33.3 | 100.0 |
+| Field: category | 15.0 | 98.3 |
+| Field: date | 18.3 | 98.3 |
+| Field: title | 6.7 | 90.0 |
+| Exact match, expense (n=40) | 0.0 | 85.0 |
+| Exact match, reminder (n=20) | 0.0 | 90.0 |
+| Exact match, seen_words (n=35) | 0.0 | 85.7 |
+| Exact match, unseen_words (n=25) | 0.0 | 88.0 |
 <!-- /AUTO:t1_metrics -->
 
 <!-- AUTO:t1_train -->
-_not run: `task1_lora/results/train_metrics.json` does not exist yet._
+Training: 600 examples, 225 steps, 271.5 s on Tesla T4, peak GPU memory 4.21 GB, 8,798,208 trainable params, logged loss 0.2734 -> 0.0001. Curve: `task1_lora/results/train_loss.png`.
 <!-- /AUTO:t1_train -->
 
 **LoRA settings** (from `task1_lora/config.json`)
@@ -82,16 +98,22 @@ Corpus: 48 pages, 15,417 words; 150 words -> 154 chunks, 400 words -> 44 chunks 
 <!-- /AUTO:t2_ingest -->
 
 <!-- AUTO:t2_recall -->
-_not run: `task2_rag/results/recall.json` does not exist yet._
+n=15 questions. `hit` = passage or page match (main metric); `passage` = gold sentence inside the chunk (stricter).
+
+| Chunk size | Retriever | hit@1 | hit@3 | hit@5 | passage@1 | passage@3 | passage@5 |
+|---|---|---|---|---|---|---|---|
+| 150 | embedding | 0.6 | 0.8 | 0.8 | 0.467 | 0.733 | 0.733 |
+| 150 | bm25 | 0.333 | 0.533 | 0.667 | 0.267 | 0.4 | 0.533 |
+| 400 | embedding | 0.733 | 0.8 | 0.867 | 0.6 | 0.733 | 0.8 |
+| 400 | bm25 | 0.267 | 0.533 | 0.667 | 0.2 | 0.467 | 0.6 |
 <!-- /AUTO:t2_recall -->
 
 **2 retrieval failures and fixes** (full detail in `task2_rag/results/failures.md`)
 
-> **TODO(Venu): failure 1.** Question / what was retrieved / why it missed / fix.
->
-> **TODO(Venu): failure 2.** Question / what was retrieved / why it missed / fix.
+1. **"What does the framework expect when an organisation retires an old AI system?"** (q13, gold page 28). Missed at both chunk sizes and by BM25. The answer is GOVERN 1.7: "decommissioning and phasing out AI systems safely". My question says "retires an old" system, and none of those words appear in the passage, so BM25 had nothing to match, and the embedding of "retire" did not land close enough to "decommissioning". The passage is also one short row inside a long table of GOVERN subcategories, so the chunk's vector is dominated by the other rows. **Fix:** chunk the Core tables one subcategory per chunk, and expand queries with synonyms (or have an LLM rewrite the query) before searching.
+2. **"When is an AI system supposed to be tested?"** (q12, gold page 33). Missed by embeddings at both sizes; the top results were other pages about testing and TEVV (pages 19, 34-35, 43). The question is short and generic, and "testing" is discussed all over the document, so many chunks look equally similar. BM25 did find the right chunk at rank 3 (at both sizes), because the exact words "tested" and "deployment" appear in the gold sentence. **Fix:** hybrid search (merge BM25 and embedding rankings) plus a re-ranker over the top 20, which would read "before their deployment and regularly while in operation" as a direct answer to "when".
 
-> **TODO(Venu): chunk size.** What the 150 vs 400 numbers above show.
+**Chunk size.** 400-word chunks worked better with embeddings: recall@1 0.733 vs 0.600 and recall@5 0.867 vs 0.800 (hit criterion). With only 44 large chunks, the right section is more likely to land in the top 5, and each chunk carries enough context to match a paraphrased question. Example: q4 ("dangerously risky") missed at 150 words but was rank 1 at 400, because the 400-word chunk keeps "unacceptable negative risk levels" and "catastrophic risks" together with the answer sentence. The cost is that a 400-word chunk gives the answering LLM more irrelevant text, so for a bigger corpus I would use smaller chunks plus a re-ranker. Embeddings also clearly beat BM25 (recall@5 0.867 vs 0.667 at 400 words), because most of my questions are paraphrased; BM25 only won on exact-word questions like q12.
 
 ## Task 3: Local model, two quantisation levels
 
